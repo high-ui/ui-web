@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
     <a href="https://www.iviewui.com">
         <img width="200" src="https://file.iviewui.com/logo.svg">
@@ -131,3 +132,7 @@ If you want to contribute or have questions or bugs to report:
 [MIT](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2016-present, iView
+=======
+# ui-web
+ui from web
+>>>>>>> dd8660baf7595b9bc012c848bf041c484493d8b5
