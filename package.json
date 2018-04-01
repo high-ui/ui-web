@@ -1,11 +1,11 @@
 {
-  "name": "UIWeb",
+  "name": "ui-web",
   "version": "2.11.0",
-  "title": "UIWeb",
+  "title": "ui-web",
   "description": "A high quality  UI components Library with Vue.js",
   "homepage": "http://www.iviewui.com",
   "keywords": [
-    "UIWeb",
+    "ui-web",
     "vue",
     "vue.js",
     "component",
