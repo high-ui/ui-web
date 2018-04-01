@@ -1,11 +1,11 @@
 {
-  "name": "iview",
+  "name": "UIWeb",
   "version": "2.11.0",
-  "title": "iView",
+  "title": "UIWeb",
   "description": "A high quality  UI components Library with Vue.js",
   "homepage": "http://www.iviewui.com",
   "keywords": [
-    "iview",
+    "UIWeb",
     "vue",
     "vue.js",
     "component",
@@ -13,7 +13,7 @@
     "ui",
     "framework"
   ],
-  "main": "dist/iview.js",
+  "main": "dist/ui-web.js",
   "files": [
     "dist",
     "src"
@@ -32,12 +32,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iview/iview"
+    "url": "https://github.com/high-ui/ui-web"
   },
   "author": "Aresn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iview/iview/issues"
+    "url": "https://github.com/high-ui/ui-web"
   },
   "dependencies": {
     "async-validator": "^1.8.2",
