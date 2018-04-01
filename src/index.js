@@ -133,7 +133,7 @@ const install = function(Vue, opts = {}) {
     locale.i18n(opts.i18n);
 
     Object.keys(UIWeb).forEach(key => {
-        Vue.component('i-' + key, UIWeb[key]);
+        Vue.component('ui-' + key, UIWeb[key]);
     });
 
     Vue.prototype.$Loading = LoadingBar;
