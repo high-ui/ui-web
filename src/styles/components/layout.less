@@ -1,0 +1,117 @@
+
+@layout-prefix-cls: ~"@{css-prefix}layout";
+
+.@{layout-prefix-cls} {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    background: #f5f7f9;
+
+    &&-has-sider {
+        flex-direction: row;
+        > .@{layout-prefix-cls},
+        > .@{layout-prefix-cls}-content {
+            overflow-x: hidden;
+        }
+    }
+
+    &-sider {
+        transition: all .2s @ease-in-out;
+        position: relative;
+        border: 1px solid #e0e8ef;
+        min-width: 0;
+
+        &-title-left {
+            height: 26px;
+            line-height: 26px;
+            background-color: #fafafa;
+            border-bottom: 1px solid #e0e8ef;
+            padding-left: 8px;
+
+            &-icon {
+                height: 16px;
+                width: 16px;
+                float: right;
+                margin-right: 4px;
+                margin-top: 4px;
+                padding-left: 4px;
+                padding-right: 4px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &-text {
+
+            }            
+        }
+
+        &-title-right {
+            height: 26px;
+            line-height: 26px;
+            background-color: #fafafa;
+            border-bottom: 1px solid #e0e8ef;
+
+            &-icon {
+                height: 16px;
+                width: 16px;
+                float: left;
+                margin-left: 8px;
+                margin-top: 4px;
+                margin-right: 4px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &-text {
+
+            }            
+        }
+        
+        &-children {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top: 27px;
+            bottom: 1px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        &-children-full {
+            top: 0 !important;
+        }
+
+        &-collapsed > &-children,
+        &-collapsed &-title-left-text,
+        &-collapsed &-title-right-text {
+            display: none !important;
+        }
+    }
+
+    &-footer {
+        background: @layout-footer-background;
+        padding: @layout-footer-padding;
+        color: @text-color;
+        font-size: @font-size-base;
+    }
+
+    &-header,
+    &-footer {
+        flex: 0 0 auto;
+    }
+
+    &-header {
+        background: @layout-header-background;
+        padding: @layout-header-padding;
+        height: @layout-header-height;
+        line-height: @layout-header-height;
+    }
+
+    &-content {
+        flex: auto;
+    }
+}
