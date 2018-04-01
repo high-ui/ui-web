@@ -123,22 +123,8 @@ const components = {
     Upload
 };
 
-const iview = {
-    ...components,
-    iButton: Button,
-    iCircle: Circle,
-    iCol: Col,
-    iContent: Content,
-    iForm: Form,
-    iFooter: Footer,
-    iHeader: Header,
-    iInput: Input,
-    iMenu: Menu,
-    iOption: Option,
-    iProgress: Progress,
-    iSelect: Select,
-    iSwitch: Switch,
-    iTable: Table
+const UIWeb = {
+    ...components
 };
 
 const install = function(Vue, opts = {}) {
@@ -146,8 +132,8 @@ const install = function(Vue, opts = {}) {
     locale.use(opts.locale);
     locale.i18n(opts.i18n);
 
-    Object.keys(iview).forEach(key => {
-        Vue.component(key, iview[key]);
+    Object.keys(UIWeb).forEach(key => {
+        Vue.component('i-' + key, UIWeb[key]);
     });
 
     Vue.prototype.$Loading = LoadingBar;
@@ -173,7 +159,7 @@ const API = {
 };
 
 API.lang = (code) => {
-    const langObject = window['iview/locale'].default;
+    const langObject = window['UIWeb/locale'].default;
     if (code === langObject.i.locale) locale.use(langObject);
     else console.log(`The ${code} language pack is not loaded.`); // eslint-disable-line no-console
 };
